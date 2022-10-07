@@ -7,7 +7,6 @@
     justify-content: center;
   }
   * body main {
-    border: 1px solid red;
     gap: 1.5vw;
     flex-direction: row;
   }
@@ -34,7 +33,7 @@
     flex-direction: column;
   }
   * body main .dashboard {
-    width: unset;
+    width: 50vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 1.5vw;
