@@ -3,16 +3,9 @@ const info = document.querySelectorAll('.info2')
 
 but.forEach(b => {
     b.addEventListener('click', e => {
-        removeData()
         generarData(b.id)
     })
 })
-
-let removeData = () => {
-    info.forEach(i => {
-        i.innerHTML = ""
-    })
-}
 
 let generarData = id => {
 
