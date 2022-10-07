@@ -1,0 +1,67 @@
+@media screen and (min-width: 1440px) {
+
+    * {
+        body {
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            main {
+                border: 1px solid red;
+                gap: 1.5vw;
+                flex-direction: row;
+                .header {
+                    width: 15vw;
+                    .profile {
+                        padding: 1.5vw;
+                        gap: 2vw;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        h2 {
+                            font-size: 2.3rem;
+                            margin-bottom: 2vw;
+                        }
+                        img {
+                            width: 4.5vw;
+                        }
+                    }
+                    .config {
+                        gap: 1vw;
+                        padding: 1.5vw;
+                        align-items: flex-start;
+                        flex-direction: column;
+                    }
+                }
+                .dashboard {
+                    width: unset;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-column-gap: 1.5vw;
+                    grid-row-gap: 1.5vw;
+                    div {
+                    }
+                    .info {
+                        margin-top: 2vw;
+                        padding: 1.5vw;
+                        gap: 2vw;
+                        .info2 {
+                            align-items: flex-start;
+                            flex-direction: column;
+                        }
+                        h2 {
+                            font-size: 2.8rem;
+                        }
+                    }
+                    .div1 { grid-area: 1 / 1 / 2 / 2; }
+                    .div2 { grid-area: 1 / 2 / 2 / 3; }
+                    .div3 { grid-area: 1 / 3 / 2 / 4; }
+                    .div4 { grid-area: 2 / 1 / 3 / 2; }
+                    .div5 { grid-area: 2 / 2 / 3 / 3; }
+                    .div6 { grid-area: 2 / 3 / 3 / 4; }
+                }
+            }
+        }
+    }
+
+}
