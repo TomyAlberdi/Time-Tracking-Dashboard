@@ -39,10 +39,11 @@
                     align-items: center;
                     padding: 5vw 7vw;
                     h3 {
+                        cursor: pointer;
                         color: hsl(235, 45%, 61%);
                         font-weight: 400;
-                        &.active {
-                            color: hsl(236, 100%, 87%);
+                        &.active, &:hover {
+                            color: white;
                         }
                     }
                 }
@@ -97,6 +98,10 @@
                     gap: 2vw;
                     flex-direction: column;
                     justify-content: space-between;
+                    &:hover {
+                        background-color: hsl(235, 41%, 32%);
+                        cursor: pointer;
+                    }
                     .info1 {
                         display: flex;
                         justify-content: space-between;

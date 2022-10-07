@@ -43,11 +43,12 @@
   padding: 5vw 7vw;
 }
 * body main .header .config h3 {
+  cursor: pointer;
   color: hsl(235deg, 45%, 61%);
   font-weight: 400;
 }
-* body main .header .config h3.active {
-  color: hsl(236deg, 100%, 87%);
+* body main .header .config h3.active, * body main .header .config h3:hover {
+  color: white;
 }
 * body main .dashboard {
   width: 90vw;
@@ -100,6 +101,10 @@
   gap: 2vw;
   flex-direction: column;
   justify-content: space-between;
+}
+* body main .dashboard .info:hover {
+  background-color: hsl(235deg, 41%, 32%);
+  cursor: pointer;
 }
 * body main .dashboard .info .info1, * body main .dashboard .info .info2 {
   display: flex;
